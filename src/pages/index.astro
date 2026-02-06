@@ -1,9 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting';
+import imgBlog from '../avecolor.png';
+
 const pageTitle = "Página de inicio";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>El impresionante subtítulo de mi blog</h2>
+  <h2>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h2>
    <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
-</BaseLayout>
+  </BaseLayout>
+  <div class="flex justify-center">
+  <img class="md: w-140 " src={imgBlog.src} alt="Imagen de ave colorida">
+  </div>
